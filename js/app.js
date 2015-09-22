@@ -4,7 +4,7 @@
     .controller('myCtrl', function($scope) {
       
       $('textarea').highlightTextarea({
-        words: ['i love you', 'mel'],
+        words: ['mel i love you <3'],
         caseSensitive: false
       });
 
