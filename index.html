@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" data-ng-app="myApp">
 <head>
   <title>Highlighter</title>
   
@@ -11,7 +11,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
-<body ng-controller="myCtrl">
+<body data-ng-controller="myCtrl">
   <nav class='navbar navbar-default'>
     <div class='container'>
       <div class='navbar-header'>
@@ -35,9 +35,9 @@
           <label for="category">Select the part of speech that you want to analyse:</label>
           <select id="category"
                   class="form-control" 
-                  ng-options="category.name for category in wordCategories" 
-                  ng-model="selectedCategory"
-                  ng-change="getSpeechData()">
+                  data-ng-options="category.name for category in wordCategories" 
+                  data-ng-model="selectedCategory"
+                  data-ng-change="getSpeechData()">
           </select>
         </div>
         
